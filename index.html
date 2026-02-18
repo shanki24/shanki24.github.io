@@ -519,87 +519,260 @@
 
 
     <!-- CRIME PROJECT -->
-    <div class="card">
-        <h3>PatrolIQ – Smart Safety Analytics Platform</h3>
+<div class="card">
+    <h3>PatrolIQ – Smart Safety Analytics Platform</h3>
 
-        <p><strong>Domain:</strong> Public Safety | Urban Analytics | Unsupervised Machine Learning</p>
+    <p><strong>Domain:</strong> Public Safety | Urban Analytics | Unsupervised Machine Learning</p>
 
-        <p>
-            Built a large-scale crime analytics platform leveraging clustering and 
-            dimensionality reduction to identify geographic crime hotspots and 
-            temporal crime patterns.
-        </p>
+    <p>
+        Designed and deployed a large-scale urban crime intelligence platform 
+        analyzing 500,000 sampled records from 7.8 million Chicago crime incidents 
+        (2001–2025). The system leverages unsupervised machine learning, 
+        geospatial analytics, and dimensionality reduction techniques to 
+        identify high-risk zones, temporal crime patterns, and clustering behavior 
+        to support data-driven public safety decision-making.
+    </p>
 
-        <p><strong>Key Highlights:</strong></p>
-        <ul>
-            <li>Implemented K-Means, DBSCAN, and Hierarchical Clustering.</li>
-            <li>Used PCA & t-SNE for dimensionality reduction.</li>
-            <li>Evaluated clustering using Silhouette Score & Davies–Bouldin Index.</li>
-            <li>Built interactive Streamlit dashboards with heatmaps and trend analysis.</li>
-        </ul>
+    <p><strong>Key Highlights:</strong></p>
+    <ul>
+        <li>
+            Engineered preprocessing pipeline on 22+ structured crime features 
+            including geographic coordinates, timestamps, offense categories, 
+            arrest indicators, and severity metrics.
+        </li>
 
-        <p><strong>Technical Stack:</strong><br>
-            Python, scikit-learn, MLflow, Streamlit
-        </p>
+        <li>
+            Implemented multiple clustering techniques:
+            <ul>
+                <li><strong>K-Means</strong> for structured hotspot segmentation</li>
+                <li><strong>DBSCAN</strong> for density-based anomaly zone detection</li>
+                <li><strong>Hierarchical Clustering</strong> for nested crime pattern grouping</li>
+            </ul>
+        </li>
 
-        <p>
-            <a href="https://chicago-crime-app-vf3rfj7ev4tdavyk3iphcs.streamlit.app/" target="_blank">
-                🔗 View Live Application
-            </a>
-        </p>
-    </div>
+        <li>
+            Applied PCA and t-SNE for dimensionality reduction, 
+            compressing high-dimensional crime features into 2–3 principal components 
+            explaining 70%+ variance.
+        </li>
+
+        <li>
+            Evaluated clustering performance using Silhouette Score 
+            and Davies–Bouldin Index to ensure cluster separation quality.
+        </li>
+
+        <li>
+            Built interactive multi-page Streamlit dashboard including:
+            <ul>
+                <li>Geographic Heatmaps & Hotspot Visualization</li>
+                <li>Hourly & Seasonal Crime Trend Analysis</li>
+                <li>Cluster Comparison Dashboard</li>
+                <li>Dimensionality Reduction Visual Explorer</li>
+            </ul>
+        </li>
+
+        <li>
+            Integrated MLflow for experiment tracking and 
+            clustering model comparison.
+        </li>
+    </ul>
+
+    <p><strong>Technical Stack:</strong><br>
+        Python (Pandas, NumPy, scikit-learn), 
+        K-Means, DBSCAN, Hierarchical Clustering, 
+        PCA, t-SNE, 
+        MLflow, 
+        Geospatial Data Analysis, 
+        Streamlit Deployment
+    </p>
+
+    <p><strong>Business Impact Simulated:</strong><br>
+        • Identified high-risk crime zones for optimized patrol allocation<br>
+        • Discovered peak crime time windows (late-night high-frequency patterns)<br>
+        • Enabled evidence-based public safety planning<br>
+        • Reduced manual crime pattern analysis through automated clustering<br>
+        • Demonstrated scalable analytics architecture for smart city applications
+    </p>
+
+    <p>
+        <a href="https://chicago-crime-app-vf3rfj7ev4tdavyk3iphcs.streamlit.app/" target="_blank">
+        🔗 View Live Application</a>
+    </p>
+</div>
 
 
     <!-- SMARTVISION PROJECT -->
     <div class="card">
-        <h3>SmartVision AI – Multi-Class Object Recognition System</h3>
+    <h3>SmartVision AI – Multi-Class Object Recognition System</h3>
 
-        <p><strong>Domain:</strong> Computer Vision | Deep Learning</p>
+    <p><strong>Domain:</strong> Computer Vision | Deep Learning | Real-Time AI Systems</p>
 
-        <p>
-            Deep learning system integrating CNN architectures and YOLOv8 for 
-            real-time object detection with GPU acceleration.
-        </p>
+    <p>
+        Designed and deployed a production-ready computer vision platform 
+        integrating transfer learning-based image classification and YOLOv8 
+        multi-object detection. The system was trained on a curated 25-class 
+        subset of the COCO dataset (2,500+ images) and optimized for 
+        real-time GPU-accelerated inference using CUDA.
+    </p>
 
-        <ul>
-            <li>Implemented VGG16, ResNet50, MobileNetV2, EfficientNet-B0.</li>
-            <li>Fine-tuned YOLOv8 achieving mAP@0.5: 85–90%.</li>
-            <li>Optimized inference using CUDA-enabled GPU.</li>
-            <li>Deployed via Streamlit with real-time detection.</li>
-        </ul>
+    <p><strong>Key Highlights:</strong></p>
+    <ul>
+        <li>
+            Implemented and fine-tuned multiple CNN architectures using transfer learning:
+            <ul>
+                <li><strong>VGG16</strong> – Baseline model evaluation</li>
+                <li><strong>ResNet50</strong> – Improved feature extraction depth</li>
+                <li><strong>MobileNetV2</strong> – Lightweight optimized inference</li>
+                <li><strong>EfficientNet-B0</strong> – Achieved highest classification accuracy (88–93%)</li>
+            </ul>
+        </li>
 
-        <p>
-            <a href="https://smartvision-ai-ab5uhvuwxrx9f6eejgncwk.streamlit.app/" target="_blank">
-                🔗 View Live Application
-            </a>
-        </p>
-    </div>
+        <li>
+            Fine-tuned YOLOv8 for real-time multi-object detection achieving:
+            <ul>
+                <li>mAP@0.5: 85–90%</li>
+                <li>30–50 FPS GPU inference performance</li>
+            </ul>
+        </li>
+
+        <li>
+            Engineered complete inference pipeline:
+            <ul>
+                <li>Image Upload → YOLO Detection → Optional CNN Verification</li>
+                <li>Non-Maximum Suppression (NMS)</li>
+                <li>Confidence Threshold Filtering</li>
+                <li>Bounding Box Rendering with Class Labels & Scores</li>
+            </ul>
+        </li>
+
+        <li>
+            Built multi-page Streamlit application including:
+            <ul>
+                <li>Image Classification Dashboard</li>
+                <li>Object Detection Interface</li>
+                <li>Live Webcam Detection (Real-Time Inference)</li>
+                <li>Model Performance Analytics</li>
+                <li>Technical Architecture Documentation</li>
+            </ul>
+        </li>
+
+        <li>
+            Optimized model training and inference using CUDA-enabled 
+            NVIDIA RTX 2060 GPU, reducing inference latency significantly.
+        </li>
+
+        <li>
+            Evaluated models using Accuracy, Precision, Recall, F1-Score, 
+            Confusion Matrix, mAP metrics, inference time benchmarking, 
+            and model size comparison.
+        </li>
+    </ul>
+
+    <p><strong>Technical Stack:</strong><br>
+        Python, PyTorch, Torchvision, Ultralytics YOLOv8, 
+        Transfer Learning, CNN Architectures (VGG16, ResNet50, MobileNetV2, EfficientNet), 
+        OpenCV, Data Augmentation, 
+        GPU Training (CUDA), 
+        Streamlit Deployment
+    </p>
+
+    <p><strong>Business Applications:</strong><br>
+        • Smart City surveillance & traffic analytics<br>
+        • Retail shelf monitoring & product recognition<br>
+        • Security & automated compliance monitoring<br>
+        • Healthcare PPE detection & safety validation<br>
+        • Logistics & warehouse automation systems
+    </p>
+
+    <p>
+        <a href="https://smartvision-ai-ab5uhvuwxrx9f6eejgncwk.streamlit.app/" target="_blank">
+        🔗 View Live Application</a>
+    </p>
+</div>
 
 
     <!-- AGRIVISION PROJECT -->
-    <div class="card">
-        <h3>AgriVision-Bridge 2026 – Multi-Modal Crop Diagnostic AI System</h3>
+<div class="card">
+    <h3>AgriVision-Bridge 2026 – Multi-Modal Crop Diagnostic AI System</h3>
 
-        <p><strong>Domain:</strong> AgriTech | Computer Vision | Generative AI</p>
+    <p><strong>Domain:</strong> AgriTech | Computer Vision | Generative AI</p>
 
-        <p>
-            Multi-modal AI system combining YOLO-based crop disease detection 
-            with Llama 3 (via Ollama) to generate explainable diagnostic reports.
-        </p>
+    <p>
+        Designed and deployed a multi-modal AI platform that combines YOLO-based 
+        crop disease detection with a locally deployed LLM (Llama 3 via Ollama) 
+        to generate explainable, structured diagnostic reports. The system processes 
+        crop leaf images in real time and delivers actionable treatment recommendations 
+        for precision agriculture use cases.
+    </p>
 
-        <ul>
-            <li>YOLO model trained on 10,000+ crop images.</li>
-            <li>Integrated OpenCV lesion visualization.</li>
-            <li>Structured prompt engineering with local LLM.</li>
-            <li>GPU-accelerated inference via Streamlit.</li>
-        </ul>
+    <p><strong>System Architecture:</strong></p>
+    <ul>
+        <li><strong>Vision Layer:</strong> YOLO model trained on 10,000+ labeled crop images for multi-class disease detection</li>
+        <li><strong>Explainability Layer:</strong> Lesion segmentation and visualization using OpenCV (watershed & contour mapping)</li>
+        <li><strong>Reasoning Layer:</strong> Structured prompt engineering integrated with Llama 3 (local inference via Ollama)</li>
+        <li><strong>Deployment Layer:</strong> GPU-accelerated Streamlit application with real-time inference</li>
+    </ul>
 
-        <p>
-            <a href="https://agrivision-bridge-2026.streamlit.app/" target="_blank">
-                🔗 View Live Application
-            </a>
-        </p>
-    </div>
+    <p><strong>Key Highlights:</strong></p>
+    <ul>
+        <li>
+            Fine-tuned YOLO model for multi-class plant disease classification 
+            with optimized bounding-box detection and confidence scoring.
+        </li>
+
+        <li>
+            Integrated OpenCV-based lesion visualization to highlight infected 
+            regions and improve interpretability of AI predictions.
+        </li>
+
+        <li>
+            Designed structured prompt templates to generate context-aware 
+            diagnostic summaries including severity assessment and treatment guidance.
+        </li>
+
+        <li>
+            Benchmarked GPU (CUDA) vs CPU inference latency to ensure 
+            real-time performance optimization.
+        </li>
+
+        <li>
+            Implemented fully local multi-modal pipeline 
+            (Image → Detection → Prompt Structuring → LLM Diagnosis → Report Output).
+        </li>
+
+        <li>
+            Built production-ready Streamlit interface featuring:
+            <ul>
+                <li>Image Upload & Real-Time Detection</li>
+                <li>Disease Confidence Scoring</li>
+                <li>LLM-Generated Diagnostic Reports</li>
+                <li>Visualization of Infected Regions</li>
+                <li>Performance Metrics Display</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p><strong>Technical Stack:</strong><br>
+        Python, Ultralytics YOLO, OpenCV, 
+        PyTorch, CUDA (GPU Acceleration), 
+        Llama 3 (via Ollama – Local LLM), 
+        Prompt Engineering, 
+        Streamlit Deployment
+    </p>
+
+    <p><strong>Business Impact Simulated:</strong><br>
+        • Early crop disease detection to prevent yield loss<br>
+        • AI-driven advisory for farmers and agri-consultants<br>
+        • Reduced dependency on manual agronomic inspection<br>
+        • Deployable local AI system suitable for rural environments<br>
+        • Scalable precision agriculture analytics framework
+    </p>
+
+    <p>
+        <a href="https://agrivision-bridge-2026.streamlit.app/" target="_blank">
+        🔗 View Live Application</a>
+    </p>
+</div>
 
 </section>
 
