@@ -343,18 +343,64 @@
     </p>
 </div>
 
-    <div class="card">
-        <h3>AgriVision Bridge 2026</h3>
-        <p><strong>Domain:</strong> Agricultural Data Intelligence</p>
-        <p>
-            Developed an interactive analytics platform for agricultural insights,
-            enabling data-driven decisions through visual dashboards and predictive
-            analytics.
-        </p>
-        <p><strong>Tools:</strong> Python (Pandas, sklearn, mlflow, pytorch, torchvision, openCV2), Deep Learning, Large Language Model (LLM), Ollama, Computer Vision, Object Detection, Streamlit, Data Visualization</p>
-        <p><strong>Impact:</strong> Enabled real-time crop and trend analysis for improved decision-making.</p>
-        <p><a href="https://agrivision-bridge-2026.streamlit.app/" target="_blank">🔗 Live Demo</a></p>
-    </div>
+<div class="card">
+    <h3>AgriVision-Bridge 2026 – Multi-Modal Crop Diagnostic AI System</h3>
+
+    <p><strong>Domain:</strong> AgriTech | Computer Vision | Generative AI</p>
+
+    <p>
+        Designed and deployed a multi-modal AI platform that combines 
+        YOLO-based computer vision with a locally deployed LLM (Llama 3 via Ollama) 
+        to detect crop diseases and generate explainable, human-readable 
+        diagnostic reports. The system processes crop leaf images in real-time 
+        and provides actionable treatment recommendations.
+    </p>
+
+    <p><strong>System Architecture:</strong></p>
+    <ul>
+        <li><strong>Vision Layer:</strong> YOLO model trained on 10,000+ crop images for disease classification</li>
+        <li><strong>Explainability Layer:</strong> Lesion visualization using OpenCV (watershed segmentation)</li>
+        <li><strong>Reasoning Layer:</strong> Structured prompt engineering + Local LLM (Llama 3)</li>
+        <li><strong>Deployment Layer:</strong> Streamlit application with GPU-accelerated inference</li>
+    </ul>
+
+    <p><strong>Key Highlights:</strong></p>
+    <ul>
+        <li>Trained and fine-tuned YOLO model for multi-class crop disease detection.</li>
+        <li>Benchmarked GPU (CUDA) vs CPU inference latency for real-time diagnostics.</li>
+        <li>Integrated bounding-box and lesion visualization for explainable AI outputs.</li>
+        <li>Designed prompt logic to handle high, moderate, and low-confidence detections.</li>
+        <li>Implemented fully local multi-modal pipeline (Vision → Prompt → LLM → Diagnosis).</li>
+        <li>Built production-ready Streamlit UI with evaluation metrics display.</li>
+    </ul>
+
+    <p><strong>Technical Stack:</strong><br>
+        Python, YOLO (Ultralytics), OpenCV, 
+        PyTorch, CUDA (GPU Acceleration), 
+        Local LLM (Llama 3 via Ollama), 
+        Prompt Engineering, 
+        Streamlit Deployment
+    </p>
+
+    <p><strong>Evaluation Metrics:</strong><br>
+        • Detection confidence & mAP (offline training validation)<br>
+        • Inference latency benchmarking (CPU vs GPU)<br>
+        • Prompt robustness for low-confidence scenarios<br>
+        • End-to-end system integration quality
+    </p>
+
+    <p><strong>Business Impact Simulation:</strong><br>
+        • Early crop disease detection to prevent yield loss<br>
+        • AI-driven agri-advisory for farmers<br>
+        • Scalable precision agriculture solution<br>
+        • Deployable local AI system for rural environments
+    </p>
+
+    <p>
+        <a href="https://agrivision-bridge-2026.streamlit.app/" target="_blank">
+        🔗 View Live Application</a>
+    </p>
+</div>
 
 </section>
 
