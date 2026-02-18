@@ -208,17 +208,61 @@
 </div>
    
 
-    <div class="card">
-        <h3>Chicago Crime Analysis App</h3>
-        <p><strong>Domain:</strong> Public Safety & Crime Analytics</p>
-        <p>
-            Designed a crime analytics dashboard visualizing crime distribution,
-            time-based trends, and hotspot analysis for actionable insights.
-        </p>
-        <p><strong>Tools:</strong> Python (Pandas, Numpy, matplotlib, sklearn, mlflow), Data Cleaning, EDA, Machine Learning, Model Evaluation Metrics, Streamlit</p>
-        <p><strong>Impact:</strong> Enabled data-driven interpretation of crime patterns and hotspots.</p>
-        <p><a href="https://chicago-crime-app-vf3rfj7ev4tdavyk3iphcs.streamlit.app/" target="_blank">🔗 Live Demo</a></p>
-    </div>
+<div class="card">
+    <h3>PatrolIQ – Smart Safety Analytics Platform (Chicago Crime Intelligence)</h3>
+
+    <p><strong>Domain:</strong> Public Safety | Urban Analytics | Unsupervised Machine Learning</p>
+
+    <p>
+        Developed a large-scale urban safety intelligence platform analyzing 
+        500,000 crime records sampled from 7.8 million Chicago crime incidents 
+        (2001–2025). The system leverages unsupervised machine learning to 
+        identify geographic crime hotspots, temporal patterns, and high-risk zones 
+        to support data-driven police resource allocation.
+    </p>
+
+    <p><strong>Key Highlights:</strong></p>
+    <ul>
+        <li>Performed large-scale preprocessing and feature engineering on 22+ crime variables 
+            including geographic coordinates, time features, and crime severity scoring.</li>
+        <li>Implemented multiple clustering algorithms:
+            <ul>
+                <li>K-Means for structured hotspot identification</li>
+                <li>DBSCAN for density-based crime zone detection</li>
+                <li>Hierarchical clustering for nested geographic analysis</li>
+            </ul>
+        </li>
+        <li>Evaluated models using Silhouette Score and Davies–Bouldin Index 
+            (target silhouette score > 0.5).</li>
+        <li>Applied PCA and t-SNE for dimensionality reduction, compressing 22 features 
+            into 2–3 principal components explaining 70%+ variance.</li>
+        <li>Built interactive Streamlit dashboards with geographic heatmaps, 
+            hourly crime heatmaps, seasonal analysis, and cluster visualization.</li>
+        <li>Integrated MLflow for experiment tracking and clustering performance comparison.</li>
+    </ul>
+
+    <p><strong>Technical Stack:</strong><br>
+        Python (Pandas, NumPy, scikit-learn), 
+        K-Means, DBSCAN, Hierarchical Clustering, 
+        PCA, t-SNE, 
+        MLflow, 
+        Geographic Data Analysis, 
+        Streamlit Cloud Deployment
+    </p>
+
+    <p><strong>Business Impact Simulation:</strong><br>
+        • Identified 5–10 high-risk crime zones for optimized patrol allocation<br>
+        • Discovered peak crime windows (e.g., late-night high-risk periods)<br>
+        • Enabled evidence-based public safety resource deployment<br>
+        • Reduced manual crime pattern analysis through automated clustering
+    </p>
+
+    <p>
+        <a href="https://chicago-crime-app-vf3rfj7ev4tdavyk3iphcs.streamlit.app/" target="_blank">
+        🔗 View Live Application</a>
+    </p>
+</div>
+
 
     <div class="card">
         <h3>SmartVision AI</h3>
